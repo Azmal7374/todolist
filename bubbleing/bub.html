@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbleing</title>
+</head>
+<body>
+    <div id="grand-parent">GrandParent</div>
+    <div id="parent">Parent</div>
+    <div id="child">Child</div>
+
+    <script>
+        document.getElementById('grand-parent').addEventListener('click', function(){
+            console.log('grandParent is clicled');
+        },true)
+
+        document.getElementById('parent').addEventListener('click', function(){
+            console.log('Parent is clicled');
+        },true)
+
+        document.getElementById('child').addEventListener('click', function(){
+            console.log('child is clicled');
+        },true)
+    </script>
+</body>
+</html>
+
+
+//Event Bubbleing: niche theke uporer dike jabe
+
+Bubbleing of: event.stopPropagation()
+
+// Event captchering: upor theke niche jabe
